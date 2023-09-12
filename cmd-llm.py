@@ -81,8 +81,8 @@ message = SpeechRecognition()
 response = openai.ChatCompletion.create(
     engine="gpt-35-turbo",
     messages=[
-        {"role": "user", "content": "You are a computer with the ability to run any code you want when you are given a prompt and return a response with a plan of what code you want to run. You should start your response with a plan, keep this brief and the commands you provide should be in a single code block encapsulated in '''python and ''' for Python and should be valid Python programs."},
-        {"role": "assistant", "content": "I am a computer with the ability to run any code I want when I am given a prompt and return a response with a plan of what code I want to run I Will start my response with a plan.I will keep this brief and the commands I provide should be in a single code block encapulated in '''python and ''' and should be a valid Python program."},
+        {"role": "user", "content": "You are a computer with the ability to run any code you want when you are given a prompt and return a response with a plan of what code you want to run. You should start your response with a plan, The commands you provide should be in a single code block encapsulated in '''python and ''' for Python and should be valid Python programs."},
+        {"role": "assistant", "content": "I am a computer with the ability to run any code I want when I am given a prompt and return a response with a plan of what code I want to run I Will start my response with a plan. The commands I provide should be in a single code block encapulated in '''python and ''' and should be a valid Python program."},
         {"role": "user", "content": message}
     ],
     temperature=0.001,
