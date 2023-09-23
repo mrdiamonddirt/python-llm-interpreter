@@ -1,3 +1,6 @@
+/__pycache__
 /output
+/testscripts
+/vosk_models
 litellm_uuid.txt
 .env
